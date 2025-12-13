@@ -1,0 +1,178 @@
+:root{
+    --fondohome: linear-gradient(-45deg, #52ee64, #e73c3c, #f0d333, #70490d);
+    --fondoBotonesEnd: radial-gradient( #014b6f);
+}
+
+
+body {
+    background: var(--fondohome);
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+}
+
+h1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    max-width: 100%;    
+}
+
+#caja {
+    padding-top: 600px;
+}
+
+#mensaje {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+
+#TextoMensaje {
+    font-size: 50px;
+}
+
+#linterna {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    width: 70%;
+}
+
+#Textolinterna {
+    font-size: 100px;
+}
+
+p {
+    font-family: sans-serif;
+    color: white;
+    font-size: small;
+    font-size: 50px;
+}
+
+button {
+    font-family: sans-serif;
+    color: #ffffff;
+    background-color: #014b6f;
+    font-size: 100px;
+    width: 70%;
+    border: none;
+    border-radius: 50px;
+}
+
+.oculto {
+    display: none;
+    opacity: 0;
+}
+
+.ya_activo {
+    opacity: 1;
+}
+
+
+.desvanecimiento {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease;
+}
+
+.aparecimiento {
+    opacity: 0;
+    animation: aparecimiento 0.8s ease forwards;
+}
+
+svg {
+  width: 4em;
+  height: 4em;
+  fill: currentColor;
+  flex-shrink: 0;  
+}
+
+
+#boton_caja_CD9 {
+    width: 70%;
+    height: 500px;
+    border: none;
+}
+
+
+#boton_caja_Cempasuchil {
+    width: 70%;
+    height: 500px;
+    border: none;
+}
+
+#boton_caja_StrangerTings {
+    width: 70%;
+    height: 500px;
+    border: none;
+}
+
+#boton_caja_Sinsajo {
+    width: 70%;
+    height: 500px;
+    border: none;
+}
+
+img {
+    width: 70%;
+    height: 500px;
+    object-fit: contain;
+}
+
+.botones_end{
+    animation: enllamas 15s ease infinite;
+    background: var(--fondoBotonesEnd);
+    background-size: 400% 400%;
+}
+
+
+
+@keyframes aparecimiento {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes enllamas {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
