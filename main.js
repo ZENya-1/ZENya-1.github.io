@@ -61,7 +61,7 @@ boton_linterna.addEventListener('click', () => {
 
 });
 
-const sound = document.getElementById("silvido");
+const soundSinsajo = document.getElementById("silvido");
 boton_caja_Sinsajo.addEventListener('click', () => {
 
     document.documentElement.style.setProperty(
@@ -70,15 +70,92 @@ boton_caja_Sinsajo.addEventListener('click', () => {
     );
     document.documentElement.style.setProperty(
         "--fondoBotonesEnd",
-        "linear-gradient( #ec0d0d, #ec6b00, #f07f20, #d6a13d, #f4c01c)"
+        "linear-gradient(-45deg, #ec0d0d, #ec6b00, #f07f20, #d6a13d, #f4c01c)"
     );
 
 
-    sound.currentTime = 0;
-    sound.play();
+    soundSinsajo.currentTime = 0;
+    soundSinsajo.play();
+
+    document.documentElement.style.setProperty(
+        "--ColorLogoBoton",
+        "#652a00ff"
+    );
+        document.documentElement.style.setProperty(
+        "--ColorTextoCajasGen",
+        "white"
+    );
 
 });
 
 
+boton_caja_CD9.addEventListener('click', () => {
 
+    document.documentElement.style.setProperty(
+        "--fondohome",
+        "linear-gradient(-45deg, #e2e2e2ff, #ffffffff)"
+    );
+    document.documentElement.style.setProperty(
+        "--fondoBotonesEnd",
+        "linear-gradient(45deg, #000000,)"
+    );
 
+    document.documentElement.style.setProperty(
+        "--ColorLogoBoton",
+        "black"
+    );
+
+    document.documentElement.style.setProperty(
+        "--ColorTextoCajasGen",
+        "black"
+    );
+
+});
+
+const soundST = document.getElementById("tudum");
+boton_caja_StrangerTings.addEventListener('click', () => {
+
+    document.documentElement.style.setProperty(
+        "--fondohome",
+        "linear-gradient(-45deg, #000000ff)"
+    );
+    document.documentElement.style.setProperty(
+        "--fondoBotonesEnd",
+        "linear-gradient( -45deg, #000000ff, #000000ff, #000000ff)"
+    );
+    document.documentElement.style.setProperty(
+        "--ColorLogoBoton",
+        "red"
+    );
+    document.documentElement.style.setProperty(
+        "--ColorTextoCajasGen",
+        "white"
+    );
+
+    soundST.currentTime = 0;
+    soundST.play();
+
+});
+
+boton_caja_Cempasuchil.addEventListener('click', () => {
+
+    document.documentElement.style.setProperty(
+        "--fondohome",
+        "linear-gradient(-45deg, #005a21ff, #0b5001ff, #161616ff, #004505ff)"
+    );
+    document.documentElement.style.setProperty(
+        "--fondoBotonesEnd",
+        "linear-gradient(45deg, #000000, )"
+    );
+
+    document.documentElement.style.setProperty(
+        "--ColorLogoBoton",
+        "#ffb91d "
+    );
+
+    document.documentElement.style.setProperty(
+        "--ColorTextoCajasGen",
+        "white"
+    );
+
+});
